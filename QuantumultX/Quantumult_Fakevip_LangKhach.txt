@@ -44,17 +44,17 @@ final, direct
 
 
 #
-# The “reject” returns HTTP status code 404 with no content.
-# The “reject-200” returns HTTP status code 200 with no content.
-# The “reject-img” returns HTTP status code 200 with content of 1px gif.
-# The “reject-dict” returns HTTP status code 200 with content of empty json object.
-# The “reject-array” returns HTTP status code 200 with content of empty json array.
-# The “request-header” works for all the http headers not just one single header, so you can match two or more headers including CRLF in one regular expression.
-# The length and encoding related HTTP header fields will be automatically processed by Quantumult if the “rewrite” is body related, so you should not handle them by yourself. The max supported response size is 256kB(decompressed) for response-body and script-response-body.
-# When using javascript in rewrite, you can use those objects: $request, $response, $notify(title, subtitle, message), console.log(message) and Quantumult’s built-in objects all have prefix “$”.
+# The "reject" returns HTTP status code 404 with no content.
+# The "reject-200" returns HTTP status code 200 with no content.
+# The "reject-img" returns HTTP status code 200 with content of 1px gif.
+# The "reject-dict" returns HTTP status code 200 with content of empty json object.
+# The "reject-array" returns HTTP status code 200 with content of empty json array.
+# The "request-header" works for all the http headers not just one single header, so you can match two or more headers including CRLF in one regular expression.
+# The length and encoding related HTTP header fields will be automatically processed by Quantumult if the "rewrite" is body related, so you should not handle them by yourself. The max supported response size is 256kB(decompressed) for response-body and script-response-body.
+# When using javascript in rewrite, you can use those objects: $request, $response, $notify(title, subtitle, message), console.log(message) and Quantumult’s built-in objects all have prefix "$".
 # Supports: $request.scheme, $request.method, $request.url, $request.path, $request.headers, $response.statusCode, $response.headers, $response.body
 # The $notify(title, subtitle, message) will post iOS notifications if Quantumult notification has been enabled.
-# The console.log(message)  will output logs to Quantumult log file if the log level is “debug”.
+# The console.log(message)  will output logs to Quantumult log file if the log level is "debug".
 #
 
 [mitm]
@@ -63,6 +63,6 @@ p12 = MIIKGQIBAzCCCeMGCSqGSIb3DQEHAaCCCdQEggnQMIIJzDCCBBcGCSqGSIb3DQEHBqCCBAgwgg
 ;skip_validating_cert = true
 ;force_sni_domain_name = true
 
-hostname =  vsco.co, api.gyrosco.pe, origin-prod-phoenix.jibjab.com, api.termius.com, api.picsart.com, api.unfold.app, viva-asia1.vvbrd.com, graph.nhaccuatui.com, api.memrise.com , buy.itunes.apple.com, api.sync.me, pool.elsanow.io, lambda.us-east-1.amazonaws.com, api.mondlylanguages.com, api.busuu.com,  owa.videoshowiosglobalserver.com:*, 
+hostname =  vsco.co, api.gyrosco.pe, origin-prod-phoenix.jibjab.com, api.termius.com, api.picsart.com, api.unfold.app, viva-asia1.vvbrd.com, graph.nhaccuatui.com, api.memrise.com , buy.itunes.apple.com, api.sync.me, pool.elsanow.io, lambda.us-east-1.amazonaws.com, api.mondlylanguages.com, api.busuu.com,  owa.videoshowiosglobalserver.com, accounts.elevateapp.net,
 
 [rewrite_local]
