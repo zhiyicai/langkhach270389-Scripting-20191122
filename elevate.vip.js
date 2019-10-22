@@ -1,5 +1,7 @@
 var obj = JSON.parse($response.body);
-
+var cond = obj.user.is_on_free_trial;
+if(cond== false)
+{
 obj.user.is_on_free_trial= true;
 obj.user.subscription_expiration_date_epoch= 5555555555;
 obj.user.current_subscription= {
@@ -8,5 +10,6 @@ obj.user.current_subscription= {
  "store": "App Store"
  };
  obj.user.can_purchase= false;
+ }
 
 $done({body: JSON.stringify(obj)});
