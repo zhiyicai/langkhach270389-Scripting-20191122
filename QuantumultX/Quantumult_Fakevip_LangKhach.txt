@@ -63,6 +63,6 @@ p12 = MIIKGQIBAzCCCeMGCSqGSIb3DQEHAaCCCdQEggnQMIIJzDCCBBcGCSqGSIb3DQEHBqCCBAgwgg
 ;skip_validating_cert = true
 ;force_sni_domain_name = true
 
-hostname =  vsco.co, api.gyrosco.pe, origin-prod-phoenix.jibjab.com, api.termius.com, api.picsart.com, api.unfold.app, viva-asia1.vvbrd.com, graph.nhaccuatui.com, api.memrise.com , buy.itunes.apple.com, api.sync.me, pool.elsanow.io, lambda.us-east-1.amazonaws.com, api.mondlylanguages.com, api.busuu.com,  owa.videoshowiosglobalserver.com, accounts.elevateapp.net, purchases.ws.pho.to,
+hostname =  vsco.co, api.gyrosco.pe, origin-prod-phoenix.jibjab.com, api.termius.com, api.picsart.com, api.unfold.app, viva-asia1.vvbrd.com, graph.nhaccuatui.com, api.memrise.com , buy.itunes.apple.com, api.sync.me, pool.elsanow.io, lambda.us-east-1.amazonaws.com, api.mondlylanguages.com, api.busuu.com,  owa.videoshowiosglobalserver.com, accounts.elevateapp.net, purchases.ws.pho.to, api-intl.mr.meitu.com,
 
 [rewrite_local]
