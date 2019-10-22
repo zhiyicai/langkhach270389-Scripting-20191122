@@ -1,4 +1,8 @@
-var obj = JSON.parse($response.body);
+let obj = JSON.parse($response.body);
+let url = $request.url;
+var cons = "payVerify";
+if(url.indexOf(cons) != -1)
+{
 obj= {
   "product_id": "vip_privilege_monthly",
   "status": "0",
@@ -12,4 +16,5 @@ obj= {
   "original_transaction_id": "310000409847203",
   "purchase_date": "2019-04-26 01:25:28 Etc/GMT"
 };
+}
 $done({body: JSON.stringify(obj)});
