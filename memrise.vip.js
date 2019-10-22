@@ -5,7 +5,7 @@ var cons2 = "dashboard";
 var cons3 = "leaderboard";
 if(url.indexOf(cons1) != -1)
 {
-obj.profile["is_pro"]= true;
+obj.profile.is_pro= true;
 body= JSON.stringify(obj);
 }
 if(url.indexOf(cons2) != -1)
