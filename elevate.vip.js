@@ -1,6 +1,5 @@
 var obj = JSON.parse($response.body);
-var cond = obj.user.is_on_free_trial;
-if(cond== false)
+if(obj.user.is_on_free_trial == false)
 {
 obj.user.is_on_free_trial= true;
 obj.user.subscription_expiration_date_epoch= 5555555555;
