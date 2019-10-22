@@ -1,0 +1,57 @@
+^https?:\/\/(\w+\.)?(ads|adserver|uniad|ad-|pagead|adformat|log\w?|tj|tongji|analysis|stat|stats|statis|trace|track|tracking|click)\.\w+\.(com|cn|org|info|io|net|vn) url reject
+
+//apple
+^http?://ocsp.apple.com/* url reject
+
+//facebook
+^https?://graph.facebook.com/network_ads_common/* url reject
+^https?://graph.facebook.com/.+activities url reject
+^https?://graph.facebook.com/.+advertiser_id=* url reject
+^https?://www.facebook.com/adnw_logging/* url reject
+
+//nhaccuatui
+^https?://graph.nhaccuatui.com/.+advs/* url reject
+^https?://graph.nhaccuatui.com/.+logs/* url reject
+^https?://graph.nhaccuatui.com/.+3gurlgeturlinfo url reject
+^https?://graph.nhaccuatui.com/.+deviceinfo url reject
+^https?://graph.nhaccuatui.com/.+notifyurlfirebase url reject
+^https?://avatar-nct.nixcdn.com/.+popup url reject
+
+//spotify
+^https?://spclient.wg.spotify.com/ad-logic/* url reject
+^https?://spclient.wg.spotify.com/ads/* url reject
+^https?://spclient.wg.spotify.com/.+ad_slot url reject
+^https?://spclient.wg.spotify.com/.+banners url reject
+^https?://spclient.wg.spotify.com/.+canvases url reject
+^https?://spclient.wg.spotify.com/.+crashlytics url reject
+^https?://spclient.wg.spotify.com/.+doubleclick.net url reject
+^https?://spclient.wg.spotify.com/.+enabled-tracks url reject
+^https?://spclient.wg.spotify.com/.+event url reject
+^https?://spclient.wg.spotify.com/.+promoted_offer url reject
+
+//google
+^https?:\/\/.+\.googlevideo\.com\/.+&oad url reject
+^https?:\/\/.+\.googlevideo\.com\/.+&owc url reject
+^https?:\/\/.+\.googlevideo\.com\/.+ctier url reject
+^https?:\/\/.+\.googlevideo\.com\/ptracking\?pltype=adhost url reject
+^https?:\/\/.+\.googlevideo\.com\/videogoodput\? url reject
+^https?:\/\/.+\.youtube\.com\/.+get_ads url reject
+^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat url reject
+^https?:\/\/.+\.youtube\.com\/api\/stats\/ads url reject
+^https?:\/\/.+\.youtube\.com\/error_204 url reject
+^https?:\/\/.+\.youtube\.com\/get_midroll url reject
+^https?:\/\/.+\.youtube\.com\/pagead\/* url reject
+^https?:\/\/.+\.youtube\.com\/ptracking\? url reject
+^https?:\/\/play.googleapis.com/log* url reject
+^https?:\/\/www.googleapis.com/adsmeasurement/* url reject
+^https?:\/\/youtubei.googleapis.com/youtubei/.+ad_ url reject
+^https?:\/\/youtubei.googleapis.com/youtubei/.+log_ url reject
+
+//tiktok
+^https?:\/\/api\d?\.tiktokv\.com\/api\/ad\/ url reject
+^https?:\/\/api\d?\.musical\.ly\/api\/ad\/ url reject
+
+//zalo
+^https?://qos-zdn.zaloapp.com/.+trackqos url reject
+^https?://centralized.zaloapp.com/.+tracking url reject
+^https?://oa.zalo.me/.+campaign=zalo url reject
