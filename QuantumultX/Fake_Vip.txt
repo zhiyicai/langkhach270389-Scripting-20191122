@@ -51,3 +51,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body h
 
 #elevate
 ^https:\/\/accounts\.elevateapp\.net\/api\/users\?user%5Bauthentication_token* url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/elevate.vip.js
+
+#beautyplus
+^https:\/\/api-intl\.mr\.meitu\.com\/v1\/subs_offer_elg$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/beautyplusvip.js
+
