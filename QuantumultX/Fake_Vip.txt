@@ -1,0 +1,54 @@
+# vsco
+^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ url script-response-body https://www.dropbox.com/s/49mc4ibqia0ygv2/vsco.js?dl=1
+
+# gyroscope
+^https:\/\/api\.gyrosco\.pe\/v1\/account\/$ url script-response-body https://https://www.dropbox.com/s/cnnis1imy9y02r7/Gyroscope.vip.js?dl=1
+
+# Termius 
+https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body https://www.dropbox.com/s/155xpy06q23jqs0/Terminus.js?dl=1
+
+# PicsArt
+^https:\/\/api\.picsart\.com\/users\/show\/me\.json$ url script-response-body https://www.dropbox.com/s/x0laps0wo0e4kig/picsArt.vip.js?dl=1
+
+#Vivavideo
+^https:\/\/viva-asia1\.vvbrd\.com\/api\/rest\/u\/vip* url script-response-body https://www.dropbox.com/s/ypdzl4q4gbh43q0/vivavideo.vip.js?dl=1
+
+#Undfold
+^https:\/\/api\.unfold\.app\/v1\/ios\/receipts$ url script-response-body https://www.dropbox.com/s/buwufpdeop2q3ti/Unfold.vip.js?dl=1
+
+#Nhaccuatui
+^https:\/\/graph\.nhaccuatui\.com\/v6\/users\/info\?access_token=$ url script-response-body https://www.dropbox.com/s/v6tt6r1fr1v0dnh/nhaccuatui.js?dl=1 
+
+#Memrise
+^https:\/\/api\.memrise\.com\/v1\.16\/(me|dashboard|leaderboards\/following\/\?limit=20&offset=0&period=week) url script-response-body https://www.dropbox.com/s/zh6k0kvv7d6jgm9/memrise.vip.js?dl=1
+
+#Gyroscope
+
+^https:\/\/api\.gyrosco\.pe\/v1\/account\/$ url script-response-body https://www.dropbox.com/s/cnnis1imy9y02r7/Gyroscope.vip.js?dl=1
+
+# Jibjab
+^https:\/\/origin-prod-phoenix\.jibjab\.com\/v1\/user$ url script-response-body https://www.dropbox.com/s/qb6ty7hjkjcej9o/jibjab.vip.js?dl=1
+
+#buyhack
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/langkhach270389/SCRIPTING/master/buy.itunes.apple.com.js
+
+#sync
+^https:\/\/api\.sync\.me\/api\/purchases\/(report_purchases|get_purchases)  url script-response-body https://www.dropbox.com/s/t3389m6ptcw1hfr/syn.me.js?dl=1
+
+#elsaresponse
+^https:\/\/pool\.elsanow\.io\/user\/api\/v1\/purchase$ url script-response-body https://www.dropbox.com/s/vaddb2xcbrd8v6u/elsa-response.js?dl=1
+
+#elsarewrite
+^https:\/\/pool\.elsanow\.io\/content\/api\/v1\/modules\/download$  url request-header (\r\n)x-session-token:.+(\r\n) request-header $1x-session-token: F3S0w0bysBQFdbjtxpFurrFv2ItBBcBkVQxUddQW+9vjt2JXM751ksqq5GAWpkl+kk9nhig9BGh9JhYHQaokmendY6zLZDscHiRkZD2HrdJclKVCLordAARJhYIrf5C+5OSK6ax2TA45CKi8S09FEtYXN4noXO7gt42NT6WPIv6DKhdIwVxQuIAMLU5abmpMTDlyWeI4ulBWcOQbuZWWZg==
+
+#drops
+^https:\/\/lambda\.us-east-1\.amazonaws\.com\/2015-03-31\/functions\/prod-4-syncPurchases\/invocations$ url script-response-body https://www.dropbox.com/s/4iukzi8i4upuey1/drops.js?dl=1
+
+#mondly
+^https:\/\/api\.mondlylanguages\.com\/v1\/ios\/user\/sync$ url script-response-body https://www.dropbox.com/s/rfh9jgfp9wag5oc/mondly.vip.js?dl=1
+
+#busuu
+^https:\/\/api\.busuu\.com\/users\/me* url script-response-body https://www.dropbox.com/s/ibm25vn2186b97c/busuu.vip.js?dl=1
+
+#Videoshow
+^https:\/\/owa\.videoshowiosglobalserver\.com:8095\/zone\/1\.0\.1\/iosPayClient\/payVerify\.htm\?osType=2$ url script-response-body https://www.dropbox.com/s/nv9kkk04m540kal/videoshow.vip.js?dl=1
