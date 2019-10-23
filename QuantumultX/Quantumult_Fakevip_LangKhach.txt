@@ -1,7 +1,7 @@
 ; 20191020_070434
 
 [general]
-;server_check_url=http://www.google.com/generate_204
+server_check_url=http://www.google.com/generate_204
 ;geo_location_checker=http://www.example.com/json/, https://www.example.com/script.js
 ;dns_exclusion_list=*.qq.com, qq.com, *.cmpassport.com
 ;ssid_suspended_list=LINK_22E174, LINK_22E175
@@ -9,6 +9,8 @@
 ;excluded_routes= 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
 ;icmp_auto_reply=true
 [dns]
+server=176.103.130.130
+server=176.103.130.131
 server=8.8.8.8
 server=8.8.4.4
 
@@ -20,12 +22,16 @@ server=8.8.4.4
 ;https://raw.githubusercontent.com/crossutility/Quantumult-X/master/server-complete.txt, tag=Sample-02, enabled=false
 
 [filter_remote]
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-rule.conf, tag= hostvn, enabled=true
 ;https://raw.githubusercontent.com/crossutility/Quantumult-X/master/filter.txt, tag=Sample, force-policy=your-policy-name, enabled=true
 
 [rewrite_remote]
+https://raw.githubusercontent.com/langkhach270389/Scripting/master/QuantumultX/Rule_Ads/adsblock_rewrite.list, tag= Adsblock, enabled=true
 https://raw.githubusercontent.com/langkhach270389/Scripting/master/QuantumultX/Fake_Vip.txt, tag=Fake_vip_LangKhach, enabled=true
 
 [server_local]
+shadowsocks=34.68.164.252:8889, method=none, password=none, fast-open=false, udp-relay=false, tag=USA proxy by Mr Kha
+
 
 ;shadowsocks=ss-a.example.com:80, method=chacha20, password=pwd, obfs=http, obfs-host=bing.com, obfs-uri=/resource/file, fast-open=false, udp-relay=false, server_check_url=http://www.apple.com/generate_204, tag=Sample-A
 ;shadowsocks=ss-b.example.com:80, method=chacha20, password=pwd, obfs=http, obfs-host=bing.com, obfs-uri=/resource/file, fast-open=false, udp-relay=false, tag=Sample-B
@@ -63,6 +69,7 @@ p12 = MIIKGQIBAzCCCeMGCSqGSIb3DQEHAaCCCdQEggnQMIIJzDCCBBcGCSqGSIb3DQEHBqCCBAgwgg
 ;skip_validating_cert = true
 ;force_sni_domain_name = true
 
-hostname =  vsco.co, api.gyrosco.pe, origin-prod-phoenix.jibjab.com, api.termius.com, api.picsart.com, api.unfold.app, viva-asia1.vvbrd.com, graph.nhaccuatui.com, api.memrise.com , buy.itunes.apple.com, api.sync.me, pool.elsanow.io, lambda.us-east-1.amazonaws.com, api.mondlylanguages.com, api.busuu.com,  owa.videoshowiosglobalserver.com, accounts.elevateapp.net, purchases.ws.pho.to, api-intl.mr.meitu.com, bmall.camera360.com, 
+hostname = avatar-nct.nixcdn.com, spclient.wg.spotify.com, youtubei.googleapis.com, oa.zalo.me, vsco.co, api.gyrosco.pe, origin-prod-phoenix.jibjab.com, api.termius.com, api.picsart.com, api.unfold.app, viva-asia1.vvbrd.com, graph.nhaccuatui.com, api.memrise.com , buy.itunes.apple.com, api.sync.me, pool.elsanow.io, lambda.us-east-1.amazonaws.com, api.mondlylanguages.com, api.busuu.com,  owa.videoshowiosglobalserver.com, accounts.elevateapp.net, purchases.ws.pho.to, api-intl.mr.meitu.com, bmall.camera360.com, 
 
 [rewrite_local]
+
