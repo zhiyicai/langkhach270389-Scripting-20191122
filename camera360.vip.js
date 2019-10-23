@@ -13,7 +13,7 @@ obj= {
  },
  "status": 200,
  "message": "ok",
- "serverTime": 4092611821000,
+ "serverTime": 1571821229.7542,
  "exetime": "1571821226646-4092611821000"
 };
 $done({body: JSON.stringify(obj)});
