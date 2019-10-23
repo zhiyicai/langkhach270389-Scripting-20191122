@@ -30,7 +30,6 @@ https://raw.githubusercontent.com/langkhach270389/Scripting/master/QuantumultX/R
 https://raw.githubusercontent.com/langkhach270389/Scripting/master/QuantumultX/Fake_Vip.txt, tag=Fake_vip_LangKhach, enabled=true
 
 [server_local]
-shadowsocks=34.68.164.252:8889, method=none, password=none, fast-open=false, udp-relay=false, tag=USA proxy by Mr Kha
 
 
 ;shadowsocks=ss-a.example.com:80, method=chacha20, password=pwd, obfs=http, obfs-host=bing.com, obfs-uri=/resource/file, fast-open=false, udp-relay=false, server_check_url=http://www.apple.com/generate_204, tag=Sample-A
