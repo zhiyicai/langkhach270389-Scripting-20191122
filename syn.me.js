@@ -12,8 +12,8 @@ obj=
     {
       "product_id": "com.ultimake.smartsync.membership.1year.30dayTrial",
       "platform_type": 1,
-      "purchase_date": 1540953177000,
-      "expiration_date": 15436351770000000
+      "purchase_date": 1571436858000,
+      "expiration_date": 4096044858000
     }
   ],
   "error_description": "OK"
