@@ -19,11 +19,10 @@ server=8.8.4.4
 
 [server_remote]
 ;https://raw.githubusercontent.com/crossutility/Quantumult-X/master/server.txt, tag=Sample-01
-;https://raw.githubusercontent.com/crossutility/Quantumult-X/master/server-complete.txt, tag=Sample-02, enabled=false
 
 [filter_remote]
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-rule.conf,force-policy=reject, tag= hostvn, enabled=true
-;https://raw.githubusercontent.com/crossutility/Quantumult-X/master/filter.txt, tag=Sample, force-policy=your-policy-name, enabled=true
+
 
 [rewrite_remote]
 https://raw.githubusercontent.com/langkhach270389/Scripting/master/QuantumultX/Fake_Vip.txt, tag=Fake_vip_LangKhach, enabled=true
