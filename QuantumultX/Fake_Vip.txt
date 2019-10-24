@@ -57,7 +57,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body h
 ^https:\/\/api-intl\.mr\.meitu\.com\/v1\/subs_offer_elg$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/beautyplusvip.js
 
 #camera360
-^https:\/\/bmall\.camera360\.com\/api\/iap\/check-receipt$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/camera360.vip.
+^https:\/\/bmall\.camera360\.com\/api\/iap\/check-receipt$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/camera360.vip.js
 
 #zingtv
 ^http:\/\/api\.tv\.zing\.vn\/3\.1\/user* url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/zingtvvipv1.js
