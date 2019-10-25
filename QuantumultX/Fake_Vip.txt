@@ -70,3 +70,6 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body h
 
 #zingmp3
 ^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getUserInfo* url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/zingmp3.vip.js 
+
+#boom
+^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ url script-response-body https://github.com/langkhach270389/Scripting/blob/master/boom.vip.js
