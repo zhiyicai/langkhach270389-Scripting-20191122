@@ -1,5 +1,4 @@
 var obj = JSON.parse($response.body);
-
 obj= {
  "status": "0",
  "receipt-data": {
