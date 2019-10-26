@@ -1,3 +1,5 @@
+var obj = JSON.parse($response.body);
+obj=
 {
  "data": {
   "errorCode": 0,
@@ -13,4 +15,5 @@
  "message": "ok",
  "serverTime": 157192473.9075,
  "exetime": "1571924739075-4096532852866"
-}
+};
+$done({body: JSON.stringify(obj)});
