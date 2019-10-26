@@ -11,8 +11,6 @@ server_check_url=http://www.google.com/generate_204
 [dns]
 server=176.103.130.130
 server=176.103.130.131
-server=8.8.8.8
-server=8.8.4.4
 
 
 [policy]
