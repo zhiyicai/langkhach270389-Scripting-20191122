@@ -9,7 +9,7 @@ obj=
     "productId": "VIP_yearly_29.99",
     "appleVip": 1,
     "expireTime": 4096532852,
-    "operationVip": 0,
+    "operationVip": 1,
     "errorCode": 0
   },
   "message": "ok",
