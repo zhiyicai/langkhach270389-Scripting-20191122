@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"/>
+<style type="text/css">
+body {
+	background-color: #f6f6f6;
+	color: #333;
+	margin: 16px;
+}
+pre {
+	font-family: Menlo, monospace;
+	white-space: pre-wrap;
+	margin-top: 0;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+pre.diffline {
+	border-width: 0 0 0 8px;
+	margin-left: -16px;
+	margin-right: -16px;
+	padding-right: 16px;
+	padding-left: 8px;
+	border-style: solid;
+}
+.added {
+	color: green;
+	background-color: #f4fbef;
+	border-color: #c9ffb3;
+}
+.deleted {
+	color: #820e03;
+	background-color: #fbefef;
+	border-color: #ffb3b4;
+}
+.deleted-highlight {
+	background-color: #ffb3b4;
+	border-radius: 3px;
+}
+.added-highlight {
+	background-color: #c9ffb3;
+	border-radius: 3px;
+}
+.common {
+	color: #999;
+}
+</style>
+</head>
+<body>
+<pre class="common">{</pre>
+<pre class="common">  "name": "Lãng Khách",</pre>
+<pre class="diffline deleted">  "isEnterprise": false,</pre>
+
+<pre class="diffline added">  "isEnterprise": true,</pre>
+
+<pre class="common">  "last_name": "Khách",</pre>
+<pre class="common">  "services": {</pre>
+<pre class="common">    "extract": {</pre>
+<pre class="common">      "entitled": true,</pre>
+<pre class="common">      "allow_private_endpoint": false</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "color": {</pre>
+<pre class="common">      "entitled": true,</pre>
+<pre class="common">      "allow_private_endpoint": false</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "typekit": {</pre>
+<pre class="diffline deleted">      "service_level": "FREE_BASIC",</pre>
+
+<pre class="diffline added">      "service_level": "PAID_LVL_2",</pre>
+
+<pre class="common">      "entitled": true,</pre>
+<pre class="common">      "allow_private_endpoint": false</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "preview": {</pre>
+<pre class="common">      "entitled": true,</pre>
+<pre class="common">      "allow_private_endpoint": false</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "storage": {</pre>
+<pre class="common">      "entitled": true,</pre>
+<pre class="common">      "allow_private_endpoint": true</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "image": {</pre>
+<pre class="common">      "entitled": true,</pre>
+<pre class="common">      "allow_private_endpoint": true</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "edge_inspect": {</pre>
+<pre class="common">      "entitled": true,</pre>
+<pre class="common">      "allow_private_endpoint": false</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "rush_cc": {</pre>
+<pre class="diffline added">      "service_level": "PAID_LVL_2",</pre>
+<pre class="diffline deleted">      "entitled": false,</pre>
+
+<pre class="diffline added">      "entitled": true,</pre>
+
+<pre class="common">      "allow_private_endpoint": true</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "sync_settings": {</pre>
+<pre class="common">      "entitled": true,</pre>
+<pre class="common">      "allow_private_endpoint": false</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "libraries": {</pre>
+<pre class="common">      "entitled": true,</pre>
+<pre class="common">      "allow_private_endpoint": true</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "stock": {</pre>
+<pre class="common">      "service_level": "FREE_BASIC",</pre>
+<pre class="common">      "entitled": true,</pre>
+<pre class="common">      "allow_private_endpoint": true</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "story": {</pre>
+<pre class="common">      "entitled": false,</pre>
+<pre class="common">      "allow_private_endpoint": false</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "phonegap_build": {</pre>
+<pre class="common">      "entitled": false,</pre>
+<pre class="common">      "allow_private_endpoint": false</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "spark": {</pre>
+<pre class="common">      "entitled": false,</pre>
+<pre class="common">      "allow_private_endpoint": false</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "project_1324": {</pre>
+<pre class="common">      "entitled": false,</pre>
+<pre class="common">      "allow_private_endpoint": false</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "portfolio": {</pre>
+<pre class="diffline deleted">      "entitled": false,</pre>
+
+<pre class="diffline added">      "entitled": true,</pre>
+
+<pre class="common">      "allow_private_endpoint": false</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "collaboration": {</pre>
+<pre class="common">      "entitled": true,</pre>
+<pre class="common">      "allow_private_endpoint": true</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "lightroom": {</pre>
+<pre class="diffline added">      "service_level": "PAID_LVL_1",</pre>
+<pre class="common">      "entitled": true,</pre>
+<pre class="common">      "allow_private_endpoint": false</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "behance": {</pre>
+<pre class="diffline added">      "service_level": "PAID_LVL_1",</pre>
+<pre class="common">      "entitled": true,</pre>
+<pre class="common">      "allow_private_endpoint": false</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "design_assets": {</pre>
+<pre class="common">      "entitled": true,</pre>
+<pre class="common">      "allow_private_endpoint": false</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "file_sync": {</pre>
+<pre class="common">      "entitled": true,</pre>
+<pre class="common">      "allow_private_endpoint": true</pre>
+<pre class="common">    },</pre>
+<pre class="common">    "sync_metadata": {</pre>
+<pre class="common">      "entitled": true,</pre>
+<pre class="common">      "allow_private_endpoint": false</pre>
+<pre class="common">    }</pre>
+<pre class="common">  },</pre>
+<pre class="common">  "private_cloud": false,</pre>
+<pre class="common">  "devices": [</pre>
+<pre class="common">  ],</pre>
+<pre class="common">  "countryCode": "VN",</pre>
+<pre class="common">  "utcOffset": "null",</pre>
+<pre class="common">  "userId": "CC7D356C5CF3D3DA0A495FBE@AdobeID",</pre>
+<pre class="common">  "emailVerified": true,</pre>
+<pre class="common">  "first_name": "Lãng",</pre>
+<pre class="common">  "public_cloud": true,</pre>
+<pre class="common">  "preferred_languages": null,</pre>
+<pre class="common">  "allow_mobile": true,</pre>
+<pre class="diffline deleted">  "licenseStatus": "UNKNOWN",</pre>
+
+<pre class="diffline added">  "licenseStatus": "FREE",</pre>
+
+<pre class="common">  "endpoints": [</pre>
+<pre class="common">    {</pre>
+<pre class="common">      "status": "ONLINE",</pre>
+<pre class="common">      "region": "us-east-1",</pre>
+<pre class="common">      "features": {</pre>
+<pre class="common">        "libraries": {</pre>
+<pre class="common">          "storage": {</pre>
+<pre class="common">            "uri": "https://cc-api-storage.adobe.io"</pre>
+<pre class="common">          },</pre>
+<pre class="common">          "view": {</pre>
+<pre class="common">            "uri": "https://assets.adobe.com"</pre>
+<pre class="common">          }</pre>
+<pre class="common">        },</pre>
+<pre class="common">        "assets": {</pre>
+<pre class="common">          "storage": {</pre>
+<pre class="common">            "uri": "https://cc-api-storage.adobe.io"</pre>
+<pre class="common">          },</pre>
+<pre class="common">          "view": {</pre>
+<pre class="common">            "uri": "https://assets.adobe.com"</pre>
+<pre class="common">          }</pre>
+<pre class="common">        },</pre>
+<pre class="common">        "files": {</pre>
+<pre class="common">          "storage": {</pre>
+<pre class="common">            "uri": "https://cc-api-storage.adobe.io"</pre>
+<pre class="common">          },</pre>
+<pre class="common">          "view": {</pre>
+<pre class="common">            "uri": "https://assets.adobe.com"</pre>
+<pre class="common">          },</pre>
+<pre class="common">          "sync": {</pre>
+<pre class="common">            "uri": "https://scss.adobesc.com"</pre>
+<pre class="common">          }</pre>
+<pre class="common">        },</pre>
+<pre class="common">        "imageservices": {</pre>
+<pre class="common">          "service": {</pre>
+<pre class="common">            "uri": "https://cc-api-image.adobe.io"</pre>
+<pre class="common">          }</pre>
+<pre class="common">        }</pre>
+<pre class="common">      },</pre>
+<pre class="common">      "id": "00000000-0000-0000-0000-000000000000",</pre>
+<pre class="common">      "iconUrl": "https://color.adobe.com/rss/png/generateThemePng.cfm?themeid=5642630",</pre>
+<pre class="common">      "parameters": {</pre>
+<pre class="common">        "quota": true,</pre>
+<pre class="common">        "jump": true</pre>
+<pre class="common">      },</pre>
+<pre class="common">      "description": "Public Cloud",</pre>
+<pre class="common">      "private": false,</pre>
+<pre class="common">      "name": "Creative Cloud",</pre>
+<pre class="common">      "etag": ""1444922502531""</pre>
+<pre class="common">    }</pre>
+<pre class="common">  ],</pre>
+<pre class="common">  "email": "hiepkimcdtk55@gmail.com",</pre>
+<pre class="common">  "displayName": "Lãng Khách",</pre>
+<pre class="common">  "phoneNumber": null</pre>
+<pre class="common">}</pre>
+</body>
+</html>
