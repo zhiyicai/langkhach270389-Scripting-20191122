@@ -19,7 +19,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body h
 ^https:\/\/api\.unfold\.app\/v1\/ios\/receipts$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/Unfold.vip.js
 
 #Nhaccuatui
-^https:\/\/graph\.nhaccuatui\.com\/users* url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/nhaccuatui.js
+^https:\/\/graph\.nhaccuatui\.com\/.*/users* url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/nhaccuatui.js
 
 #Memrise
 
