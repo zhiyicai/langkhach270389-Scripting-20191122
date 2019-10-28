@@ -1,3 +1,4 @@
+//fucklogger
 var PROXY_DIRECT="DIRECT";
 var DIRECT="DIRECT";
 var BLACK="PROXY 127.0.0.1:80";
