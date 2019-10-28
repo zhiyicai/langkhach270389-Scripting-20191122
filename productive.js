@@ -10,7 +10,7 @@ obj= {
    "com.beHappy.Productive.1y_7dt_sub00031.": {
     "is_valid": true,
     "cancelled": false,
-    "may_expire": false,
+    "may_expire": true,
     "is_trial": true,
     "is_intro": false,
     "transaction_id": "20000618719284",
@@ -18,7 +18,7 @@ obj= {
     "purchase_date_ms": "1572250822000",
     "expired": false,
     "expires_date_ms": "4096862781000",
-    "remaining_time_ms": "86400000000"
+    "remaining_time_ms": "2522880000000"
    }
   },
   "consumable_inapp": [],
