@@ -18,7 +18,7 @@ obj= {
     "purchase_date_ms": "1572250822000",
     "expired": false,
     "expires_date_ms": "4096862781000",
-    "remaining_time_ms": "2522880000000"
+    "remaining_time_ms": "86400000000"
    }
   },
   "consumable_inapp": [],
