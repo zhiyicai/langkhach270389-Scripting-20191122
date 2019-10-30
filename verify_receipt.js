@@ -7,3 +7,4 @@ let obj = JSON.parse($response.body);
   obj["latest_receipt_info"][0]["expires_date_pst"] = "2099-10-18 22:14:18 America/Los_Angeles";
   obj["latest_receipt_info"][0]["expires_date_ms"] = "4116323658000";
 $done({body: JSON.stringify(obj)});
+//Magi+, kunicam, kinemaster, filmr, intromaker, snell, gemini, Manly
