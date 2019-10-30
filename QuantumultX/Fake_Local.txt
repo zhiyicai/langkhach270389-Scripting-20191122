@@ -86,4 +86,4 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ url script-response-body boom.vip.js
 
 #mimo
-^https:\/\/api\.getmimo\.com\/.*\/subscriptions$ url script-response-body mimo.vip.js
+^https:\/\/api\.getmimo\.com\/.*/subscriptions$ url script-response-body mimo.vip.js
