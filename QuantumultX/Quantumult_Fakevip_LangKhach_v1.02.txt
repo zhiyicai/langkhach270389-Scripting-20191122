@@ -42,7 +42,6 @@ https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantu
 ;host-suffix, googleapis.com, proxy
 final, direct
 
-
 #
 # The "reject" returns HTTP status code 404 with no content.
 # The "reject-200" returns HTTP status code 200 with no content.
