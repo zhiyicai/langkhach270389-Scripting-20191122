@@ -87,7 +87,6 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 ^https:\/\/graph\.nhaccuatui\.com\/.*\/users\/info* url script-response-body nhaccuatui.js
 
 #Memrise
-
 ^https:\/\/api\.memrise\.com\/v1\.16\/(me\/$|dashboard\/$|leaderboards\/following\/) url script-response-body memrise.vip.js
 
 # Jibjab
@@ -144,11 +143,12 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 #productive
 ^https:\/\/subs\.platforms\.team\/apple\/verifyTransaction$ url script-response-body productive.js
 
-#Musixmatch By 𝑴𝒊𝒂𝒐 
+#Musixmatch
 ^https:\/\/apic\.musixmatch\.com\/ws\/.*\/(user|config)\.get url script-response-body musixmatch.miao.js
 
 #boom
 ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ url script-response-body boom.vip.js
+
 #ads
 ^https?:\/\/.+\.googlevideo\.com\/.+&oad url reject-img
 ^https?:\/\/.+\.googlevideo\.com\/.+ctier url reject-img
