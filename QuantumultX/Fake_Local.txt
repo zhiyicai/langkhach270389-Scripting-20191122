@@ -83,7 +83,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 ^https:\/\/apic\.musixmatch\.com\/ws\/.*\/(user|config)\.get url script-response-body musixmatch.miao.js
 
 #boom
-^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ url script-response-body boom.vip.js
+^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ url 302 https://raw.githubusercontent.com/langkhach270389/Scripting/master/boom.vip.rsp
 
 #mimo
 ^https:\/\/api\.getmimo\.com\/v1\/subscriptions$ url script-response-body mimo.vip.js
