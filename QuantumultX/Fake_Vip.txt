@@ -86,7 +86,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body h
 ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ url 302 https://raw.githubusercontent.com/langkhach270389/Scripting/master/boom.vip.rsp
 
 #mimo
-^https:\/\/api\.getmimo\.com\/v1\/subscriptions$ url script-response-body mimo.vip.js
+^https:\/\/api\.getmimo\.com\/v1\/subscriptions$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/mimo.vip.js
 
 #mojo
-^https:\/\/api\.revenuecat\.com\/v1\/receipts$ url script-response-body mojo.vip.js
+^https:\/\/api\.revenuecat\.com\/v1\/receipts$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/mojo.vip.js
