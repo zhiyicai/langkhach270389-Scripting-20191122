@@ -1,4 +1,4 @@
-//fucklogger
+//
 var PROXY_DIRECT="DIRECT";
 var DIRECT="DIRECT";
 var BLACK="PROXY 127.0.0.1:8423";
@@ -12,4 +12,5 @@ if(d(h,"mobile\u002dapi.adguard.com")){return BLACK;}
 if(d(h,"ocsp.apple.com")){return BLACK;}
 if(d(h,"logger.suibyuming.com")){return BLACK;}
 if(d(h,"logger.adthor.com")){return BLACK;}
+if(d(h,"buy.itunes.apple.com")){return BLACK;}
 return PROXY_DIRECT;}

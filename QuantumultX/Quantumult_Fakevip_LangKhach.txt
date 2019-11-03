@@ -9,9 +9,8 @@ server_check_url=http://www.google.com/generate_204
 ;excluded_routes= 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
 ;icmp_auto_reply=true
 [dns]
-server=176.103.130.130
-server=176.103.130.131
-
+server=1.1.1.1
+server=1.0.0.1
 
 [policy]
 
@@ -24,6 +23,7 @@ https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantu
 
 [rewrite_remote]
 https://raw.githubusercontent.com/langkhach270389/Scripting/master/QuantumultX/Fake_Vip.txt, tag=Fake_vip_LangKhach, enabled=true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumultX-rewrite.conf, tag=HostVn, enabled=true
 
 [server_local]
 
@@ -64,15 +64,3 @@ p12 = MIIKGQIBAzCCCeMGCSqGSIb3DQEHAaCCCdQEggnQMIIJzDCCBBcGCSqGSIb3DQEHBqCCBAgwgg
 skip_validating_cert = true
 force_sni_domain_name = true
 
-
-[rewrite_local]
-^https?:\/\/.+\.googlevideo\.com\/.+&oad url reject-img
-^https?:\/\/.+\.googlevideo\.com\/.+ctier url reject-img
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ url reject-img
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+log_ url reject-img
-^https?:\/\/.+\.youtube\.com\/get_midroll_ url reject-img
-^https?:\/\/premiumyva\.appspot\.com\/vmclickstoadvertisersite url reject-img
-^https?:\/\/.+\.youtube\.com\/api\/stats\/ads url reject-img
-^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat url reject-img
-^https?:\/\/.+\.youtube\.com\/pagead\/ url reject-img
-^https?:\/\/.+\.youtube\.com\/ptracking url reject-img
