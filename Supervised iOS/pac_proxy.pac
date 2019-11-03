@@ -1,7 +1,7 @@
 //fucklogger
 var PROXY_DIRECT="DIRECT";
 var DIRECT="DIRECT";
-var BLACK="PROXY 127.0.0.1:80";
+var BLACK="PROXY 127.0.0.1:8423";
 var WHITE=PROXY_DIRECT;
 function s(u,r){return shExpMatch(u,r);}
 function d(h,r){return dnsDomainIs(h,r);}
