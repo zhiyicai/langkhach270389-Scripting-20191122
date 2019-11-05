@@ -107,8 +107,8 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 #ulike
 ^https:\/\/commerce-i18n-api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info$ url script-response-body ulike.js
 
-#AdguardLifetime
-^https:\/\/mobile-api\.adguard\.com\/api\/1\.0\/ios_validate_receipt$ url 302 Adguard.rsp
+#adguardpremium
+^https:\/\/mobile-api\.adguard\.com\/api\/1\.0\/ios_validate_receipt$ url 302 https://raw.githubusercontent.com/langkhach270389/Scripting/master/Adguard.rsp
 
 #zingmp3test
 ^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getUserInfo\?data=* url response-body "lastVipExpireTime":.* response-body "vip":{"expireTime":32500966600,"startTime":1572527803,"subscription":{"status":1,"expireTime": 1869254270,"platform":2},"vipType":1},"obStatus":1,"isIapLog":false},"timestamp":1572528003783}
