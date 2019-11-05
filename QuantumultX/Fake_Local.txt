@@ -102,7 +102,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 ^https:\/\/www\.peacefulsoundsapp\.com\/api\/v1\/init$ url script-response-body musicalm.js
 
 #duolingo
-^^https:\/\/duolingo-leaderboards-prod\.duolingo\.com\/leaderboards* url script-response-body duolingo.js
+^https:\/\/duolingo-leaderboards-prod\.duolingo\.com\/leaderboards* url script-response-body duolingo.js
 
 #ulike
 ^https:\/\/commerce-i18n-api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info$ url script-response-body ulike.js
