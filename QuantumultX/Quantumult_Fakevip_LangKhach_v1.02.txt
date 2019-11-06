@@ -34,7 +34,7 @@ https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantu
 ;shadowsocks=ws-tls-a.example.com:443, method=aes-128-gcm, password=pwd, obfs=wss, obfs-uri=/ws, fast-open=false, udp-relay=false, tag=Sample-G
 
 [filter_local]
-host-keyword, https://mobile-api.adguard.com/api/1.0/status.html, reject
+host-keyword, mobile-api.adguard.com/api/1.0/status.html, reject
 ;user-agent, ?abc*, proxy
 ;host, www.google.com, proxy
 ;host-keyword, adsite, reject
