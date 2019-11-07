@@ -34,7 +34,7 @@ https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantu
 ;shadowsocks=ws-tls-a.example.com:443, method=aes-128-gcm, password=pwd, obfs=wss, obfs-uri=/ws, fast-open=false, udp-relay=false, tag=Sample-G
 
 [filter_local]
-host-keyword, mobile-api.adguard.com/api/1.0/status.html, reject
+host-keyword, https://mobile-api.adguard.com/api/1.0/status.html, reject
 ;user-agent, ?abc*, proxy
 ;host, www.google.com, proxy
 ;host-keyword, adsite, reject
@@ -61,7 +61,7 @@ p12 = MIIKDwIBAzCCCdkGCSqGSIb3DQEHAaCCCcoEggnGMIIJwjCCBA8GCSqGSIb3DQEHBqCCBAAwgg
 skip_validating_cert = true
 ;force_sni_domain_name = true
 
-hostname = avatar-nct.nixcdn.com, spclient.wg.spotify.com, *.googlevideo.com, oa.zalo.me, vsco.co, api.gyrosco.pe, origin-prod-phoenix.jibjab.com, api.termius.com, api.picsart.com, api.unfold.app, viva-asia1.vvbrd.com, graph.nhaccuatui.com, api.memrise.com , buy.itunes.apple.com, api.sync.me, pool.elsanow.io, lambda.us-east-1.amazonaws.com, api.mondlylanguages.com, api.busuu.com, owa.videoshowiosglobalserver.com, accounts.elevateapp.net, purchases.ws.pho.to, api-intl.mr.meitu.com, bmall.camera360.com, api.tv.zing.vn, api.calm.com, www.calm.com, api.global.mp3.zing.vn, apimboom2.globaldelight.net, photos.adobe.io, license.pdfexpert.com, subs.platforms.team, apic.musixmatch.com, api.getmimo.com, api.revenuecat.com, pixmagicapp.com, engbright.com, api.lingokids.com, www.peacefulsoundsapp.com, duolingo-leaderboards-prod.duolingo.com, commerce-i18n-api.faceu.mobi, mobi, mobile-api.adguard.com, api.blinkist.com,
+hostname = avatar-nct.nixcdn.com, spclient.wg.spotify.com, *.googlevideo.com, oa.zalo.me, vsco.co, api.gyrosco.pe, origin-prod-phoenix.jibjab.com, api.termius.com, api.picsart.com, api.unfold.app, viva-asia1.vvbrd.com, graph.nhaccuatui.com, api.memrise.com , buy.itunes.apple.com, api.sync.me, pool.elsanow.io, lambda.us-east-1.amazonaws.com, api.mondlylanguages.com, api.busuu.com, owa.videoshowiosglobalserver.com, accounts.elevateapp.net, purchases.ws.pho.to, api-intl.mr.meitu.com, bmall.camera360.com, api.tv.zing.vn, api.calm.com, www.calm.com, api.global.mp3.zing.vn, apimboom2.globaldelight.net, photos.adobe.io, license.pdfexpert.com, subs.platforms.team, apic.musixmatch.com, api.getmimo.com, api.revenuecat.com, pixmagicapp.com, engbright.com, api.lingokids.com, www.peacefulsoundsapp.com, duolingo-leaderboards-prod.duolingo.com, commerce-i18n-api.faceu.mobi, mobi, mobile-api.adguard.com, api.blinkist.com, api.sololearn.com,
 
 [rewrite_local]
 # vsco
@@ -179,4 +179,8 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 ^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getUserInfo\?data=* url response-body "lastVipExpireTime":.* response-body "vip":{"expireTime":32500966600,"startTime":1572527803,"subscription":{"status":1,"expireTime": 1869254270,"platform":2},"vipType":1},"obStatus":1,"isIapLog":false},"timestamp":1572528003783}
 
 #Blinkist
-^https:\/\/api\.blinkist\.com\/v4\/me\/access$ url script-response-body Blinkist.js
+^https:\/\/api\.blinkist\.com\/v4\/(me$|me.json$|me\/access$) url script-response-body blinkist.js
+
+
+#sololearn 
+^https:\/\/api\.sololearn\.com\/(Profile\/GetProfile$|authenticateDevice$) url script-response-body sololearn.js
