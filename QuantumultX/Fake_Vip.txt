@@ -94,7 +94,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body h
 ^https:\/\/engbright\.com\/app-portal\/apple\/receipt$ url 302 https://raw.githubusercontent.com/langkhach270389/Scripting/master/Bright.rsp
 
 #lingokids
-^https:\/\/api\.Lingokids\.com\/v1\/renovate_session$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/lingokids.vip.js
+^https:\/\/api\.lingokids\.com\/v1\/renovate_session$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/lingokids.vip.js
 
 #musicalm
 ^https:\/\/www\.peacefulsoundsapp\.com\/api\/v1\/init$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/musicalm.js
