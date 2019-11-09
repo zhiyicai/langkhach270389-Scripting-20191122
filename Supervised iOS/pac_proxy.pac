@@ -1,16 +1,13 @@
-//
 var DIRECT="DIRECT";
 var FakeIAP= "PROXY test.ejiaogl.com:8889";
 var BLACK="PROXY 127.0.0.1:80";
 function FindProxyForURL(url, host) {
- //List domain FakeIAP//
    var FakeIAP_list = array(
         "api.calm.com",
         "api.termius.com",
         "license.pdfexpert.com",
         "photos.adobe.io"
     );
- //List domain Block//
    var Black_list = array(
         "ocsp.apple.com",
         "logger.suibyuming.com",
