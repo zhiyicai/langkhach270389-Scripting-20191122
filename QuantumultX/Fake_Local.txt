@@ -73,7 +73,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 ^https:\/\/photos\.adobe\.io\/v2\/accounts* url script-response-body Lightroom.js
 
 #Pdfexpert
-^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/refresh$ url script-response-body Pdfexpert.vip.js
+^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) url script-response-body Pdfexpert.vip.js
 
 #productive
 ^https:\/\/subs\.platforms\.team\/apple\/verifyTransaction$ url script-response-body productive.js
@@ -94,7 +94,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 ^https:\/\/engbright\.com\/app-portal\/apple\/receipt$ url 302 https://raw.githubusercontent.com/langkhach270389/Scripting/master/Bright.rsp
 
 #lingokids
-^https:\/\/api\.Lingokids\.com\/v1\/renovate_session$ url script-response-body lingokids.vip.js
+^https:\/\/api\.lingokids\.com\/v1\/renovate_session$ url script-response-body lingokids.vip.js
 
 #musicalm
 ^https:\/\/www\.peacefulsoundsapp\.com\/api\/v1\/init$ url script-response-body musicalm.js
