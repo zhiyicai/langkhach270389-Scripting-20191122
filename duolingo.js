@@ -3,11 +3,12 @@ var url = $request.url;
 var obj = JSON.parse(body);
 obj['num_sessions_remaining_to_unlock'] = 0;
 obj['tier'] = 4;
-if(!obj['active']){
- obj['active'] = {}
+if(!obj['active'])
+{
+ obj['active'] = {};
 }
-obj['active']['collab_goal_accepted'] = false
-obj['active']['complete'] = false
+obj['active']['collab_goal_accepted'] = false;
+obj['active']['complete'] = false;
 if(!obj['active']['contest']){
  obj['active']['contest'] = {}
 }
