@@ -128,3 +128,6 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 
 #over
 ^https:\/\/api\.overhq\.com\/(user\/token\/refresh$|subscription\/verifyReceipt$) url script-response-body over.vip.js
+
+#1blocker
+^https:\/\/api\.revenuecat\.com\/.*\/subscribers\/[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}$ url script-response-body 1blocker.js
