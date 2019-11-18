@@ -134,3 +134,6 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body h
 
 #speak&translate
 ^https:\/\/receipt-validator\.herewetest\.com\/apple\/verifyTransaction$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/speak&translate.js
+
+#document7
+^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/documents7.js

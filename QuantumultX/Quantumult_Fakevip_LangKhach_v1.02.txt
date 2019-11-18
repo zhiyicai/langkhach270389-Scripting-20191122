@@ -17,8 +17,8 @@ static=Fake iAP 1, proxy, reject, direct
 https://github.com/tinycarrot/tinycarrot/raw/master/quantumutlx/remote/fakeiap_server.txt, tag=Fake iAP Server 1, enabled=true
 
 [filter_remote]
-https://raw.githubusercontent.com/tinycarrot/tinycarrot/master/Profile/quantumult/fakePXX-itunes.txt, tag=Fake PXX, force-policy=direct, enabled=true
-https://raw.githubusercontent.com/tinycarrot/tinycarrot/master/Profile/quantumult/fakeiap-filter.txt, tag=Fake iAP 1, force-policy=direct, enabled=true
+https://raw.githubusercontent.com/tinycarrot/tinycarrot/master/Profile/quantumult/fakePXX-itunes.txt, tag=Fake PXX, force-policy=direct, enabled=false
+https://raw.githubusercontent.com/tinycarrot/tinycarrot/master/Profile/quantumult/fakeiap-filter.txt, tag=Fake iAP 1, force-policy=direct, enabled=false
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-rule.conf, tag=hostvn, force-policy=reject, enabled=true
 
 [rewrite_remote]
@@ -26,6 +26,7 @@ https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantu
 
 [server_local]
 
+;http=127.0.0.1:8118, username=, password=, fast-open=false, udp-relay=false, certificate=1 ,tag=LOCAL DEBUG Server
 
 ;shadowsocks=ss-a.example.com:80, method=chacha20, password=pwd, obfs=http, obfs-host=bing.com, obfs-uri=/resource/file, fast-open=false, udp-relay=false, server_check_url=http://www.apple.com/generate_204, tag=Sample-A
 ;shadowsocks=ss-b.example.com:80, method=chacha20, password=pwd, obfs=http, obfs-host=bing.com, obfs-uri=/resource/file, fast-open=false, udp-relay=false, tag=Sample-B
@@ -36,6 +37,7 @@ https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantu
 ;shadowsocks=ws-tls-a.example.com:443, method=aes-128-gcm, password=pwd, obfs=wss, obfs-uri=/ws, fast-open=false, udp-relay=false, tag=Sample-G
 
 [filter_local]
+;host, *, LOCAL DEBUG Server
 ;user-agent, ?abc*, proxy
 ;host, www.google.com, proxy
 ;host-keyword, adsite, reject
@@ -62,7 +64,7 @@ p12 = MIIKDwIBAzCCCdkGCSqGSIb3DQEHAaCCCcoEggnGMIIJwjCCBA8GCSqGSIb3DQEHBqCCBAAwgg
 skip_validating_cert = true
 ;force_sni_domain_name = true
 
-hostname = avatar-nct.nixcdn.com, spclient.wg.spotify.com, *.googlevideo.com, oa.zalo.me, vsco.co, api.gyrosco.pe, origin-prod-phoenix.jibjab.com, api.termius.com, api.picsart.com, api.unfold.app, viva-asia1.vvbrd.com, graph.nhaccuatui.com, api.memrise.com , buy.itunes.apple.com, api.sync.me, pool.elsanow.io, lambda.us-east-1.amazonaws.com, api.mondlylanguages.com, api.busuu.com, owa.videoshowiosglobalserver.com:0, accounts.elevateapp.net, purchases.ws.pho.to, api-intl.mr.meitu.com, bmall.camera360.com, api.tv.zing.vn, api.calm.com, www.calm.com, api.global.mp3.zing.vn, apimboom2.globaldelight.net, photos.adobe.io, license.pdfexpert.com, subs.platforms.team, apic.musixmatch.com, api.getmimo.com, api.revenuecat.com, pixmagicapp.com, engbright.com, api.lingokids.com, www.peacefulsoundsapp.com, duolingo-leaderboards-prod.duolingo.com, commerce-i18n-api.faceu.mobi, mobi, mobile-api.adguard.com, api.blinkist.com, api.sololearn.com, receipts.cerebralgardens.com, api-kinemaster-assetstore.nexstreaming.com, api-production.endel.io, intl-passport.iqiyi.com, api.pushover.net, api.intsig.net, api.overhq.com, api.appsyscode.com, app.autocad360.com, api1.fitbod.me,
+hostname = avatar-nct.nixcdn.com, spclient.wg.spotify.com, *.googlevideo.com, oa.zalo.me, vsco.co, api.gyrosco.pe, origin-prod-phoenix.jibjab.com, api.termius.com, api.picsart.com, api.unfold.app, viva-asia1.vvbrd.com, graph.nhaccuatui.com, api.memrise.com , buy.itunes.apple.com, api.sync.me, pool.elsanow.io, lambda.us-east-1.amazonaws.com, api.mondlylanguages.com, api.busuu.com, owa.videoshowiosglobalserver.com:8095, accounts.elevateapp.net, purchases.ws.pho.to, api-intl.mr.meitu.com, bmall.camera360.com, api.tv.zing.vn, api.calm.com, www.calm.com, api.global.mp3.zing.vn, apimboom2.globaldelight.net, photos.adobe.io, license.pdfexpert.com, subs.platforms.team, apic.musixmatch.com, api.getmimo.com, api.revenuecat.com, pixmagicapp.com, engbright.com, api.lingokids.com, www.peacefulsoundsapp.com, duolingo-leaderboards-prod.duolingo.com, commerce-i18n-api.faceu.mobi, mobi, mobile-api.adguard.com, api.blinkist.com, api.sololearn.com, receipts.cerebralgardens.com, api-kinemaster-assetstore.nexstreaming.com, api.pushover.net, api-cs.intsig.net, api.overhq.com, api.appsyscode.com, api.freeletics.com, api.shred.app, receipt-validator.herewetest.com,
 
 [rewrite_local]
 # vsco
@@ -114,7 +116,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 ^https:\/\/api\.busuu\.com\/users\/me* url script-response-body busuu.vip.js
 
 #Videoshow
-^https:\/\/owa\.videoshowiosglobalserver\.* url 302 https://www.dropbox.com/s/4r9px7wbld76nmy/videoshow.vip.rsp?dl=1
+^https:\/\/owa\.videoshowiosglobalserver\.com:8095\.* url 302 https://www.dropbox.com/s/4r9px7wbld76nmy/videoshow.vip.rsp?dl=1
 
 #elevate
 ^https:\/\/accounts\.elevateapp\.net\/api\/users\?user%5Bauthentication_token* url script-response-body elevate.vip.js
@@ -177,7 +179,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 ^https:\/\/mobile-api\.adguard\.com\/api\/1\.0\/ios_validate_receipt$ url 302 https://raw.githubusercontent.com/langkhach270389/Scripting/master/Adguard.rsp
 
 #zingmp3
-^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getUserInfo\?data=* url script-response-body zingmp3.js
+^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/(getUserInfo)\?data=* url script-response-body zingmp3.js
 
 #Blinkist
 ^https:\/\/api\.blinkist\.com\/v4\/(me$|me.json$|me\/access$) url script-response-body blinkist.js
@@ -188,17 +190,26 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 #kinemaster
 ^https:\/\/api-kinemaster-assetstore\.nexstreaming\.com\/.*\/product\/verifyReceipt$ url script-response-body kinemaster.js
 
-#iqiyi_test
-^https:\/\/intl-passport\.iqiyi\.com\/intl\/user\/info\.action* url script-response-body iqiyi.js
-
 #pushover
 ^https:\/\/api\.pushover\.net\/1\/messages\.json* url script-response-body pushover.js
 
 #CamScanner
-^https:\/\/api\.intsig\.net\/purchase\/cs\/query_property\? url script-response-body CamScaner.js
+^https:\/\/api-cs\.intsig\.net\/purchase\/cs\/query_property\? url script-response-body CamScaner.js
 
 #over
 ^https:\/\/api\.overhq\.com\/(user\/token\/refresh$|subscription\/verifyReceipt$) url script-response-body over.vip.js
 
+#freeleticgym_test
+^https:\/\/api\.freeletics\.com\/gym\/users\/\d{1,}\/validate_subscription$ url script-response-body freeleticgym.js
+
+#shred_test
+^https:\/\/api\.shred\.app\/me$ url script-response-body shred.js
+
 #1blocker
 ^https:\/\/api\.revenuecat\.com\/.*\/subscribers\/[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}$ url script-response-body 1blocker.js
+
+#speak&translate
+^https:\/\/receipt-validator\.herewetest\.com\/apple\/verifyTransaction$ url script-response-body speak&translate.js
+
+#document7
+^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$) url script-response-body documents7.js
