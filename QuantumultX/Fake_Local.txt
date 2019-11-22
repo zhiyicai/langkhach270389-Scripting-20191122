@@ -145,4 +145,4 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body draft.js
 
 #photoshop_ipad
-^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile\/nul\/v1$ url script-response-body url script-response-body photoshop.js
+;^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile\/nul\/v1$ url script-response-body url script-response-body photoshop.js
